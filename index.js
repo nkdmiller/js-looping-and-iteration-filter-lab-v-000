@@ -8,5 +8,5 @@ return result;
 
 function fuzzyMatch(drivers, string){
   const result = drivers.filter(word => word[0] === string);
-  return result;
+  return string;
 }
