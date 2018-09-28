@@ -20,6 +20,6 @@ function fuzzyMatch(drivers, string){
 }
 
 function matchName(drivers, string){
-  const result = drivers.filter(word => driver.name === string);
+  const result = drivers.filter(word => word.name === string);
   return result;
 }
