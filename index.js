@@ -7,6 +7,6 @@ return result;
 
 
 function fuzzyMatch(drivers, string){
-  const result = drivers.filter(word => word.slice[0, string.length] === string);
+  const result = drivers.filter(word => word.slice[0, string.length-1] === string);
   return result;
 }
