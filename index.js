@@ -8,7 +8,7 @@ return result;
 
 function fuzzyMatch(drivers, string){
   function fuzzy(word, string){
-    const slength = string.length - 1;
+    const slength = string.length;
     const slicedWord = word.slice(0, slength)
     if (slicedWord === string){
       return word
