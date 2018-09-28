@@ -7,11 +7,14 @@ return result;
 
 
 function fuzzyMatch(drivers, string){
-  function fuzzy {
+  function fuzzy(word, string){
     const slength = string.length - 1;
-    const slicedDrivers = [];
+    const slicedWord = word.slice(0, slength)
+    if (slicedWord === string){
+      return word
+    }
   }
 
-  const result = drivers.filter(word => word === string);
+  const result = drivers.filter(word => fuzzy(word, string));
   return result;
 }
