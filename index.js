@@ -6,7 +6,9 @@ return result;
 }
 
 function fuzzy(drivers, string){
-  for (driver of drivers)
+  for (driver of drivers){
+    for (char of string)
+  }
 }
 function fuzzyMatch(drivers, string){
   const result = drivers.filter(word =>)
