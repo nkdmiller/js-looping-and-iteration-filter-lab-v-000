@@ -5,11 +5,8 @@ const result = drivers.filter(word => word.toLowerCase() === string.toLowerCase(
 return result;
 }
 
-function fuzzy(drivers, string){
-  for (driver of drivers){
-    for (char of string)
-  }
-}
+
 function fuzzyMatch(drivers, string){
-  const result = drivers.filter(word =>)
+  const result = drivers.filter(word => word[0] === string);
+  return result;
 }
